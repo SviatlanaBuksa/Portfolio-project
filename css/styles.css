@@ -2,13 +2,15 @@
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Montserrat", sans-serif;
 
-  --primary-color: #ffffff;
+  --primary-text-color: #ffffff;
+  --primary-background-color: #1b1b1b;
 }
 
 body {
   font-family: var(--primary-font);
   font-weight: 400;
-  color: var(--primary-color);
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
 }
 
 h1,
@@ -17,6 +19,16 @@ h2 {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 17px;
+}
+
+.crop {
+  padding: 0px 20px;
+  margin-bottom: 40px;
+}
+.crop img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .hero {
@@ -48,6 +60,11 @@ h2 {
   line-height: 17px;
   padding: 18px 59px;
   border-radius: 50px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-text-color);
   color: #000;
+}
+
+.gallery {
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
