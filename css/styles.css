@@ -62,3 +62,9 @@ h2 {
   background-color: var(--primary-text-color);
   color: #000;
 }
+
+@media (max-width: 596px) {
+  .hero h2 {
+    font-size: 42px;
+  }
+}
