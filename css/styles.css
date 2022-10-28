@@ -21,14 +21,13 @@ h2 {
   margin-bottom: 17px;
 }
 
-.crop {
-  padding: 0px 20px;
-  margin-bottom: 40px;
+.photo-gallery {
+  margin-top: 80px;
 }
-.crop img {
-  height: 280px;
-  width: 100%;
-  object-fit: cover;
+
+.photo-gallery img {
+  height: 250px;
+  margin: 20px;
 }
 
 .hero {
@@ -62,9 +61,4 @@ h2 {
   border-radius: 50px;
   background-color: var(--primary-text-color);
   color: #000;
-}
-
-.gallery {
-  margin-top: 100px;
-  margin-bottom: 40px;
 }
