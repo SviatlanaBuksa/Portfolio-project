@@ -36,9 +36,13 @@ p {
   margin-bottom: 48px;
 }
 
-i {
-  margin-right: 30px;
-  margin-bottom: 64px;
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-text-color);
+  text-decoration: underline;
 }
 
 .hero {
@@ -53,10 +57,17 @@ i {
   font-size: 24px;
   line-height: 28px;
 }
+
+.content-container {
+  text-align: center;
+}
 .content-container h1 {
   font-size: 72px;
-  text-align: center;
-  margin: 32px 0 166px;
+  margin: 32px 0 140px;
+}
+
+.content-container i {
+  margin-right: 10px;
 }
 .hero h2 {
   font-size: 72px;
@@ -90,6 +101,11 @@ i {
 .about-info {
   padding-left: 14px;
   margin: auto;
+}
+
+.about-info i {
+  margin-right: 30px;
+  margin-bottom: 64px;
 }
 
 .subheadings,
