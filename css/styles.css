@@ -4,6 +4,9 @@
 
   --primary-text-color: #ffffff;
   --primary-background-color: #1b1b1b;
+
+  --secondary-background-color: #2d2727;
+  --accent-color: #f65282;
 }
 
 body {
@@ -11,6 +14,11 @@ body {
   font-weight: 400;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
+  font-size: 18px;
+}
+h1 {
+  font-size: 64px;
+  margin-top: 30px;
 }
 
 h1,
@@ -18,16 +26,18 @@ h2 {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 
-.photo-gallery {
-  margin-top: 80px;
+p {
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 48px;
 }
 
-.photo-gallery img {
-  height: 250px;
-  margin: 20px;
+i {
+  margin-right: 30px;
+  margin-bottom: 64px;
 }
 
 .hero {
@@ -47,11 +57,9 @@ h2 {
   line-height: 84px;
 }
 .hero p {
-  font-size: 18px;
-  line-height: 30px;
   margin-bottom: 32px;
 }
-.hero a {
+.btn-branding {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 14px;
@@ -63,8 +71,51 @@ h2 {
   color: #000;
 }
 
-@media (max-width: 596px) {
-  .hero h2 {
+.photo-gallery {
+  margin-top: 80px;
+}
+
+.photo-gallery img {
+  height: 250px;
+  margin: 20px;
+}
+
+.about-info {
+  padding-left: 14px;
+  margin: auto;
+}
+
+.subheadings,
+.camera-name {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.camera-name {
+  text-transform: none;
+  color: var(--primary-text-color);
+}
+.camera {
+  background-color: var(--secondary-background-color);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 30px 0 64px;
+}
+
+@media (max-width: 576px) {
+  .hero h2,
+  h1 {
     font-size: 42px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-info {
+    text-align: center;
+  }
+  .personal-photo {
+    max-width: 70%;
+    display: block;
+    margin: 32px auto;
   }
 }
