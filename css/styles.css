@@ -39,10 +39,14 @@ p {
 a {
   color: var(--primary-text-color);
   text-decoration: none;
+  transition: all 200ms ease-in-out;
 }
 a:hover {
-  color: var(--primary-text-color);
-  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+a.active {
+  color: var(--accent-color);
 }
 
 .hero {
@@ -63,7 +67,7 @@ a:hover {
 }
 .content-container h1 {
   font-size: 72px;
-  margin: 32px 0 140px;
+  margin: 32px 0 120px;
 }
 
 .content-container i {
@@ -125,10 +129,56 @@ a:hover {
   margin: 30px 0 64px;
 }
 
+.nav-container {
+  background-color: #202020;
+}
+
+nav {
+  padding: 30px;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  font-size: 16px;
+}
+
 @media (max-width: 576px) {
+  .hero {
+    padding: 80px 20px;
+  }
   .hero h2,
+  .content-container h1,
   h1 {
     font-size: 42px;
+  }
+
+  .content-container h1 {
+    margin-bottom: 100px;
+  }
+
+  nav {
+    padding: 20px;
+  }
+  nav ul {
+    margin: auto;
   }
 }
 
