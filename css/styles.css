@@ -21,7 +21,6 @@ h1 {
   font-size: 64px;
   margin-top: 30px;
 }
-
 h1,
 h2 {
   font-weight: 700;
@@ -44,7 +43,6 @@ a {
 a:hover {
   color: var(--accent-color);
 }
-
 a.active {
   color: var(--accent-color);
 }
@@ -56,10 +54,16 @@ a.active {
   background-position: center;
   padding: 160px 20px;
 }
-
 .hero h1 {
   font-size: 24px;
   line-height: 28px;
+}
+.hero h2 {
+  font-size: 72px;
+  line-height: 84px;
+}
+.hero p {
+  margin-bottom: 32px;
 }
 
 .content-container {
@@ -69,16 +73,8 @@ a.active {
   font-size: 72px;
   margin: 32px 0 120px;
 }
-
 .content-container i {
   margin-right: 10px;
-}
-.hero h2 {
-  font-size: 72px;
-  line-height: 84px;
-}
-.hero p {
-  margin-bottom: 32px;
 }
 
 .btn-branding {
@@ -96,66 +92,62 @@ a.active {
 .photo-gallery {
   margin-top: 80px;
 }
-
 .photo-gallery img {
-  height: 250px;
+  max-height: 250px;
   margin: 20px;
 }
 
-.about-info {
+.about-content {
   padding-left: 14px;
   margin: auto;
 }
-
-.about-info i {
+.about-content i {
   margin-right: 30px;
   margin-bottom: 64px;
 }
 
-.subheadings,
-.camera-name {
+.subheadings {
   color: var(--accent-color);
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .camera-name {
-  text-transform: none;
-  color: var(--primary-text-color);
+  font-weight: 700;
 }
-.camera {
+.camera-container {
   background-color: var(--secondary-background-color);
   padding: 20px;
   border-radius: 4px;
   margin: 30px 0 64px;
+}
+.camera-container img {
+  max-width: 70px;
 }
 
 .background-container {
   background-color: #202020;
 }
 
-nav {
-  padding: 30px;
-}
-
 .logo {
   max-width: 150px;
 }
 
+nav {
+  padding: 30px;
+}
 nav ul {
   padding: 0;
   margin: 0;
 }
-
 nav li {
   display: inline;
   list-style: none;
   margin-right: 20px;
 }
-
 nav li:last-child {
   margin-right: 0;
 }
-
 nav a {
   font-size: 16px;
 }
@@ -163,27 +155,28 @@ nav a {
 .footer-section {
   margin-top: 80px;
 }
-
 footer {
   padding: 30px;
-  background-color: #202020;
 }
-
 footer p {
   font-size: 16px;
   margin: 0;
   text-align: right;
 }
-
 footer i {
   font-size: 16px;
   padding: 10px;
+}
+footer p.developer {
+  font-size: 14px;
+  opacity: 0.5;
 }
 
 @media (max-width: 576px) {
   .hero {
     padding: 80px 20px;
   }
+
   .hero h2,
   .content-container h1,
   h1 {
@@ -204,7 +197,6 @@ footer i {
   footer {
     padding: 20px;
   }
-
   footer p {
     text-align: center;
     margin-top: 20px;
@@ -212,7 +204,7 @@ footer i {
 }
 
 @media (max-width: 992px) {
-  .about-info {
+  .about-content {
     text-align: center;
   }
   .personal-photo {

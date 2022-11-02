@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio project</title>
+    <meta
+      name="description"
+      content="Shelley White is an expirienced photographer based in Europe, England."
+    />
+    <title>About Shelley White - Photographer</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -34,14 +38,21 @@
     <div class="background-container">
       <div class="container p-0">
         <nav class="d-flex justify-content-between">
-          <a href="/"
-            ><img src="images/logo.png" class="logo d-none d-md-block" alt=""
+          <a href="/" title="Shelley White logo"
+            ><img
+              src="images/logo.png"
+              class="logo d-none d-md-block"
+              alt="Shelly White logo"
           /></a>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html" class="active">About</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/" title="Homepage">Home</a></li>
+            <li>
+              <a href="/about.html" class="active" title="About Shelley White"
+                >About</a
+              >
+            </li>
+            <li><a href="/gallery.html" title="Shelly's work">Gallery</a></li>
+            <li><a href="/contact.html" title="Contact Shelly">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -51,11 +62,11 @@
         <div class="col-lg-6">
           <img
             src="images/about-photo.png"
-            alt=""
+            alt="Shelley's logo"
             class="img-fluid personal-photo"
           />
         </div>
-        <div class="col-lg-6 about-info">
+        <div class="col-lg-6 about-content">
           <span class="d-block subheadings">about me</span>
           <h1>Shelley White</h1>
           <p>
@@ -64,57 +75,91 @@
             amet diam suscipit pretium massa, sollicitudin in risus in.
             Sagittis.
           </p>
-          <a href="https://facebook.com"
+          <a
+            href="https://facebook.com"
+            title="Facebook profile"
+            target="_blank"
             ><i class="fa-brands fa-square-facebook"></i
           ></a>
-          <a href="https://instagram.com"
+          <a
+            href="https://instagram.com"
+            title="Instagram profile"
+            target="_blank"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-          <a href="https://linkedin.com"
+          <a
+            href="https://linkedin.com"
+            title="LinkedIn profile"
+            target="_blank"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
           <span class="d-block subheadings">my camera</span>
-          <div class="camera d-inline-block">
-            <img
-              src="images/camera.png"
-              alt=""
-              class="img-fluid"
-              width="70px"
-            />
+          <div class="camera-container d-inline-block">
+            <img src="images/camera.png" alt="Shelley's camera" />
             <span class="camera-name">Olympus PEN-F Kamera Mirrorlees</span>
           </div>
-          <div><a href="#" class="btn btn-branding">contact me</a></div>
+          <div>
+            <a
+              href="/contact.html"
+              class="btn btn-branding"
+              title="Contact Shelley"
+              >contact me</a
+            >
+          </div>
         </div>
       </div>
     </div>
     <div
       class="container d-flex flex-wrap justify-content-center photo-gallery"
     >
-      <img src="images/Rectangle 107.png" alt="" />
-      <img src="images/Rectangle 108.png" alt="" />
-      <img src="images/Rectangle 109.png" alt="" />
+      <img src="images/Rectangle 107.png" alt="Shelley's work" />
+      <img src="images/Rectangle 108.png" alt="Shelley's work" />
+      <img src="images/Rectangle 109.png" alt="Shelley's work" />
     </div>
     <div class="background-container footer-section">
       <div class="container">
         <footer class="row">
           <div class="col-md-4">
             <a href="/"
-              ><img src="images/logo.png" class="logo d-none d-md-block" alt=""
+              ><img
+                src="images/logo.png"
+                class="logo d-none d-md-block"
+                alt="Shelley's logo"
             /></a>
           </div>
           <div class="col-md-4 text-center col-sm-12">
-            <a href="https://facebook.com"
+            <a
+              href="https://facebook.com"
+              title="Facebook profile"
+              target="_blank"
               ><i class="fa-brands fa-square-facebook"></i
             ></a>
-            <a href="https://instagram.com"
+            <a
+              href="https://instagram.com"
+              title="Instagram profile"
+              target="_blank"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="https://linkedin.com"
+            <a
+              href="https://linkedin.com"
+              title="LinkedIn profile"
+              target="_blank"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </div>
           <div class="col-md-4 col-sm-12">
             <p>© 2021 SheCodes All rights reserved.</p>
+          </div>
+          <div class="col-md-12">
+            <p class="text-center mt-4 developer">
+              This site was coded by Sviatlana Buksa, and it's
+              <a
+                href="https://github.com/SviatlanaBuksa/Portfolio-project"
+                title="Project on Github"
+                target="_blank"
+                ><b>open-sourced</b></a
+              >.
+            </p>
           </div>
         </footer>
       </div>
